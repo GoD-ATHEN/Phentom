@@ -1,0 +1,19 @@
+{
+  "name": "phentom",
+  "version": "1.0.0",
+  "description": "This website provides IT related services like web development, web desining or web application.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Athen",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "hbs": "^4.2.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.19",
+    "path": "^0.12.7"
+  }
+}
