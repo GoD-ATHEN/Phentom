@@ -32,3 +32,7 @@ app.get('/askquestion', (req, res) =>{
 app.listen(port,() => {
     console.log("listening on port " + port);
 });
+
+app.get("/aaaaa", (req, res)=>{
+    res.render("coaaaaantact");
+});
