@@ -3,7 +3,8 @@ const app = express();
 const mysql = require('mysql');
 const router = express.Router();
 const path = require('path');
-const ifl = path.join(__dirname, '/views/assets/')
+const ifl = path.join(__dirname, '/views/assets/');
+const port = process.env.PORT = 3000;
 
 app.set('view engine', 'ejs');
 app.use('/assets',express.static(ifl));
@@ -28,4 +29,6 @@ app.get('/askquestion', (req, res) =>{
     });
 });
 
-app.listen(3000);
+app.listen(port,() => {
+    console.log("listening on port " + port);
+});
